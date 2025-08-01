@@ -1,26 +1,26 @@
 import React from 'react';
-
+import { Outlet, Link } from "react-router-dom";
 function Header() {
   return (
     <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <Link to="index.html" class="logo d-flex align-items-center me-auto">
         <h1 class="sitename">Logis</h1>
-      </a>
+      </Link>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><Link to="/" class="active">Home</Link></li>
+          <li><Link to="About">About</Link></li>
+          <li><Link to="Services">Services</Link></li>
+          <li><Link to="pricing.html">Pricing</Link></li>
+          <li><Link to="contact.html">Contact</Link></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>
+      <Link class="btn-getstarted" to="get-a-quote.html">Get a Quote</Link>
 
     </div>
   </header>

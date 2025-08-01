@@ -1,19 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Servicespage from './Servicespage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Services from './components/Services';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main class="main">
-        <Hero />
-        <Services />
-      </main>
-      <Footer />
+      <Router>
+        <Header />
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Servicespage" element={<Servicespage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }
