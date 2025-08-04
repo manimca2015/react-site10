@@ -13,9 +13,9 @@ function Header() {
         <ul>
           <li><Link to="/" class="active">Home</Link></li>
           <li><Link to="About">About</Link></li>
-          <li><Link to="Services">Services</Link></li>
-          <li><Link to="pricing.html">Pricing</Link></li>
-          <li><Link to="contact.html">Contact</Link></li>
+          <li><Link to="Servicespage">Services</Link></li>
+          <li><Link to="pricing">Pricing</Link></li>
+          <li><Link to="contact">Contact</Link></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
